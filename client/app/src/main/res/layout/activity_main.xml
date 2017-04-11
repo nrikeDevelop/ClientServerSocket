@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="susy.client.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="15dp"
+         android:background="@color/configuration">
+
+         <TextView
+             android:layout_marginBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Configuration"/>
+
+         <EditText
+             android:id="@+id/ip_edit_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="192.168.1.135"
+             android:hint="ip"/>
+
+         <EditText
+             android:id="@+id/port_edit_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="port"
+             android:text="4444" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_margin="15dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/string">
+
+         <TextView
+             android:layout_marginBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="String"/>
+
+         <EditText
+             android:id="@+id/message_edit_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="message"
+             android:text="Hi World!"
+             />
+
+         <Button
+             android:id="@+id/bt_send_string"
+             android:layout_margin="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="send string"/>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="15dp"
+         android:background="@color/object">
+
+         <TextView
+             android:layout_marginBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Object"/>
+
+         <EditText
+             android:id="@+id/object_name_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="ExtraCoffe"
+             android:hint="Name"/>
+
+         <EditText
+             android:id="@+id/object_type_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Type"
+             android:text="Type_Cofee" />
+
+         <EditText
+             android:id="@+id/object_quantity_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="quantity"
+             android:text="0" />
+
+         <Button
+             android:id="@+id/bt_send_object"
+             android:layout_margin="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="send object"/>
+
+     </LinearLayout>
+
+
+
+
+ </LinearLayout>
+
+</ScrollView>
